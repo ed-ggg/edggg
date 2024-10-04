@@ -1,0 +1,406 @@
+html {
+    scroll-behavior: smooth;
+}
+*,*::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #f07b05;
+    font-family: 'Jura', sans-serif;
+    margin: 0 auto;
+    background-color: rgb(11,11,11);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+hr {
+    padding: 0px 0px;
+    margin: 0px auto;
+    width: 1000px;
+}
+h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+h3 {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+h4 {
+    padding: 0px;
+    margin: 0px;
+}
+h5 {
+    color: rgba(180, 180, 180, 0.9)
+}
+
+p {
+    color: rgb(220,220,220);
+    font-size: 20px;
+}
+
+/* HEADER */
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, green, black, rgb(9,9,9), rgb(9,9,9), rgb(9,9,9), black, green);
+}
+
+nav a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* MAIN */
+
+main{
+    text-align: center;
+}
+
+/* LEAD PICTURE */
+#top h3 {
+    color:rgb(200, 200, 200);
+}
+
+#top h1 {
+    font-size: 3rem;
+    text-shadow: 3px 4px black;
+    cursor: pointer;
+}
+
+#top h1:hover {
+    color: #ffac1c;
+}
+
+h3 span {;
+    font-size: 30px;
+    cursor: pointer;
+    color:white;
+    margin-top: 54px;
+}
+
+#info-container {
+    margin: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#lead-flex {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+.carousel {
+    width: 800px;
+    height: 450px;
+    position: relative;
+}
+
+.carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+
+.slide[data-active] {
+    opacity: 1;
+}
+
+.carousel-button {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 3rem;
+    bottom: 0%;
+    z-index: 2;
+    transform: translateY(-300%);
+    color: rgba(250,250,250,.7);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0,0,0,.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+    color: white;
+    background-color: rgba(0,0,0,.2);
+}
+
+.carousel-button.prev {
+    left: 1rem;
+}
+
+.carousel-button.next {
+    right: 1rem;
+}
+
+#lead-flex img{
+    height: auto;
+    width: 800px;
+    opacity: 1;
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+#discovery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#lead-flex hr {
+    width: 100%;
+}
+
+#discovery h4 {
+    margin: .5rem 0px .5rem 0px;
+    color:rgb(180, 180, 180);
+    font-size: 1.5rem;
+}
+
+#discovery h4 span {
+    color: #f07b05;
+}
+
+#planet-description {
+    text-align: left;
+}
+
+#data-flex {
+    display: flex;
+}
+
+.row span {
+    color: #f07b05;
+    font-family: 'Jura';
+    font-size: 20px;
+}
+
+th{
+color: rgb(200,200,200);
+padding-bottom: 5px;
+text-align: center;
+}
+
+table {
+    text-align: left;
+    font-size: 20px;
+}
+td {
+    color: rgb(200,200,200);
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  
+}
+
+#galmap {
+    position: relative;
+}
+
+#dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #00ff00;
+    position: absolute;
+}
+#galmap img {
+    border-radius: 15px;
+    border: 1px solid gray;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer h4 {
+    opacity: .8;
+    font-size: .75rem;
+}
+
+footer h2 {
+    margin-bottom: 0px;
+}
+
+html, body {
+    /*fixes whitespace to the right somehow idfk*/
+    /*dont give any element with 100% width any padding*/
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* MOBILE STUFFS */
+
+/*RESPONSIVE NAV*/
+@media only screen and (max-width: 460px) {
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav h2 {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        background-image: linear-gradient(to right, black, black);
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+
+    nav h2 {
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-image: none;
+        background-color: black;
+    }
+}
+
+/* RESPONSIVE BODY */
+
+@media only screen and (max-width: 1700px) {
+    table {
+        margin: 0 2rem;
+    }
+    #info-container {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1055px) {
+    table {
+        margin: 0 2rem 2rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .carousel {
+        width: 600px;
+        height: 338px;
+        right:51px;
+    }
+
+    .carousel-button {
+        font-size: 2.4rem;
+        bottom: 0%;
+        z-index: 2;
+        transform: translateY(-290%);
+    }
+
+    #info-container {
+        width: 500px;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    #lead-flex {
+        width: 100%;
+    }
+    #lead-flex img {
+        width: 600px;
+        height: 338px;
+        
+    }
+    #top h1 {
+        font-size: 2rem;
+    }
+    #discovery h4 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 615px) {
+    .carousel {
+        width: 400px;
+        height: 225px;
+        right: 0;
+    }
+    #discovery {
+        flex-direction: column;
+    }
+    #info-container {
+        width: 400px;
+    }
+    #lead-flex img {
+        width: 400px;
+        height: 225px;
+    }
+    .carousel-button {
+        font-size: 2.3rem;
+        bottom: 0%;
+        z-index: 2;
+        transform: translateY(-185%);
+    }
+    #galmap img {
+        width: 250px;
+        height: 250px;
+    }
+    #dot {
+        width:10px;
+        height:10px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .carousel {
+        width: 350px;
+        height: 197px;
+        
+    }
+    #info-container {
+        width: 350px;
+    }
+    #lead-flex img {
+        width: 350px;
+        height: 197px;
+    }
+    .carousel-button {
+        font-size: 2rem;
+        bottom: 0%;
+        z-index: 2;
+        transform: translateY(-185%);
+    }
+    #top h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

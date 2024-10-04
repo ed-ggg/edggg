@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    color: #f07b05;
+    font-family: 'Jura', sans-serif;
+    margin: 0 auto;
+    background-color: rgb(11,11,11);
+    box-sizing: border-box;
+}
+
+p {
+    color: rgb(219, 219, 219);
+    font-family: arial, sans-serif;
+}
+hr {
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+
+h1 {
+    margin: 0px;
+}
+
+#intro h4 {
+    margin: 20px auto;
+    color: rgb(219, 219, 219);
+    width: 800px;
+    line-height: 1.7rem;
+    font-weight: 300;
+}
+#intro h3 {
+    font-size: 1.7rem;
+}
+/* HEADER */
+header {
+    text-align: center;
+    background-image: linear-gradient(to right, green, black, black, black, black, black, green);
+    border-bottom: 2px solid rgba(15,15,15,.9);
+}
+
+header img {
+    height: auto;
+    width: 25%;
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, green, black, rgb(9,9,9), rgb(9,9,9), rgb(9,9,9), black, green);
+}
+
+nav a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* MAIN */
+
+main {
+    text-align: center;
+}
+#intro {
+    width: 90%;
+    margin:  0 auto;
+    font-size: 1.25rem;
+}
+
+#intro a {
+    color: #f07b05;
+    text-decoration: none;
+}
+
+#intro-container {
+    margin: 0 auto;
+}
+.intro-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    
+}
+div .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    font-size: 18px;
+    line-height: 1.5rem;
+    background-color: rgb(9,9,9);
+    min-height: 330px;
+    text-align: left;
+    padding: 0px 15px;
+    font-weight: 300;
+}
+.pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pic img {
+    width: 600px;
+    height: 330px;
+}
+
+#ident-container {
+    margin: 0 auto;
+}
+.noflex-text {
+    width: 600px;
+    font-size: 18px;
+    line-height: 1.5rem;
+    background-color: rgb(9,9,9);
+    min-height: 330px;
+    text-align: left;
+    padding: 0px 15px;
+    font-weight: 300;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h4 {
+    opacity: .8;
+    font-size: .75rem;
+}
+
+footer h2 {
+    margin-bottom: 0px;
+}
+/* MOBILE STUFFS */
+
+/* RESPONSIVE NAV */
+
+@media only screen and (max-width: 460px) {
+    nav {
+        display: block;
+    }
+
+    nav h2 {
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        background-image: linear-gradient(to right, black, black);
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    header img {
+        height: auto;
+        width: 100%;
+    }
+
+    nav h2 {
+        margin-bottom: 10px;
+    }
+
+    header {
+        background-image: none;
+        background-color: black;
+    }
+}
+
+/* RESPONSIVE BODY */
+
+@media only screen and (max-width: 1050px) {
+    .pic img {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .intro-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 10px;
+        flex-direction: column;
+        
+    }
+    .pic img {
+        width: 600px;
+        height: auto;
+    }
+    #intro h4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .pic img {
+        width: 100%;
+        height: auto;
+    }
+    div .text {
+        width: 100%;
+    }
+    .noflex-text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.5rem;
+        background-color: rgb(9,9,9);
+        min-height: 330px;
+        text-align: left;
+        padding: 0px 15px;
+        font-weight: 300;
+    }
+}
+
+
+
+
+
+html, body {
+    /*fixes whitespace to the right somehow idfk*/
+    /*dont give any element with 100% width any padding*/
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  }

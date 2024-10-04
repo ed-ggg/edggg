@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./resources/aboutStyles.css" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../resources/favicon.png">
+    <title>edGGG | About</title>
+</head>
+<body>
+    <header>
+        <a href='../'><img src="../resources/logo.png"/></a>
+        <h3><em>The Catalog for Green Gas Giants in Elite: Dangerous</em></h3>
+        <nav>
+            <h2><a href="#">About GGGs</a></h2>
+            <h2><a href="../">Search</a></h2>
+            <h2><a href="../#new-this-year">New This Year</a></h2>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h1 style="margin:2rem 0px 2rem 0px;">What are GGGs?</h1>
+            <div id="intro-container">
+                <div class="intro-flex">
+                    <div class="text">
+                        <p>Green Gas Giants, "GGG"s for short, are a rare special planet subtype in Elite: Dangerous. Their surface color generation is bugged, due to an oversight
+                            in the color selection algorithm for gas giants. As a result of this bug, not all colors are implemented correctly. For example, the bright color green is used as a 
+                            default planet color before it goes through calculations based on surface temperature, composition, etc. to correctly change the color. Some value in the gas 
+                            giant's characteristics causes the color picker to choose a value outside of the intended range, which returns no change in color, remaining bright green.
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <img src = './resources/hypuae bra kg-y d1.png' />
+                    </div>
+                </div>
+                <div class="intro-flex">
+                    <div class="pic">
+                        <img src="./resources/20220819171348_1.jpg"/>
+                    </div>
+                    <div class="text">
+                        <p>The <a href= '../planets/ggg1/'>first GGG</a> was discovered in 3301. Interest arose over the next few years regarding these strange "glowing green gas giants", as nicknamed by the exploration 
+                        community. These planets served as hot tourist destinations, as there were only a handful known to exist. With the release of the codex, these planets were recognized as an entirely
+                    separate planet type from their standard counterparts. The canon reasoning behind them being green is due to 'extremophile bioluminescent life' in their upper cloud decks. In more recent 
+                    years, new GGG reports have lessened due to the game's declining player count.</p>
+                    </div>
+                </div>
+            </div>
+            <h1 style="margin-top: 4rem;">Identifying a GGG</h1>
+            <h4 style="font-family: arial;">Finding a Green Gas Giant is completely random. You could go through 100,000 systems and never find one. So, here are some ways to identify if you are in a system with a GGG:</h4>
+            <div id="ident-container">
+                <div class="intro-flex">
+                    <div class="noflex-text">
+                        <h3>FSS & Codex</h3>
+                        <p>On the FSS 'barcode', there is no difference between GGGs and standard gas giants. If your GGG has sufficient green color on it, you can easily tell via the image the FSS gives you. And if this is your first time visiting a green gas giant of that class 
+                            in your current region, you will immediately recieve a codex entry for your discovery. NOTE: Water-based life GGGs have their codex entry bugged and will not show up
+                            in the codex. If this is not your first time visiting this class of GGG in the region, you won't get an alert, BUT it will still show up in your codex. You will find it 
+                            in that specific class' entry, and scroll down to where you have 'Record Highest/Lowest in region' table.
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <img src="./resources/20230201150616_1.jpg"/>
+                    </div>
+                </div>
+                <div class="intro-flex">
+                    <div class="pic">
+                        <img src="./resources/20240828201514_1.jpg"/>
+                    </div>
+                    <div class="noflex-text">
+                        <h3>System Map & Planet Description</h3>
+                        <p>The system map accurately displays how the gas giant looks if you were to fly to it. As such, any green on the planet will show up here. Along with the change
+                            in color is a change in planet description. Each class has a different description for their reason being green. The quickest way to tell is by looking for the words 'This particular gas giant', 'bioluminescent life', 'vivid <strong>colouration</strong>' or 'Luminous vapour'.
+                        </p>
+                    </div>
+                </div>
+                <div class="intro-flex">
+                    <div class="noflex-text">
+                        <h3>Notable Stellar Phenomena</h3>
+                        <p>Within the regions of Ryker's Hope and Galactic Centre, systems hosting Green Gas Giants will always generate NSP locations within them. These locations are
+                            immediately visible when dropping out of hyperspace. Within them are K10-Type Anomalies, an anomaly type that only spawns around Green Gas Giants. This is perhaps the 
+                            fastest possible way to know if a GGG is in your system in these regions. If there is no NSP location listed in your nav panel upon arrival, <strong>there is no GGG in that system.</strong>
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <img src="./resources/HighResScreenShot_2023-02-01_20-16-47.png"/>
+                    </div>
+                </div>
+                <div class="intro-flex">
+                    <div class="pic">
+                        <img src="./resources/kra.png"/>
+                    </div>
+                    <div class="noflex-text">
+                        <h3>Surface Temperature</h3>
+                        <p>One of the confirmed physical values of a planet that decide if it becomes green or not is its surface temperature. For certain planet classes, gas giants
+                            will reliably become green when their surface temperature is equal to a certain value, or is within a small range of values. This is useful to those who search through
+                            datasets of known gas giants, as some GGGs might have slipped through the cracks and were not detected, but are listed on a spreadsheet. Only 2 GGGs have ever been found 
+                            using this method, <a href="../planets/ggg39">Boelts QJ-Y d1-1149 5</a> and <a href="../planets/ggg42">Thaileia PJ-O d7-74 D 3</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Suggestions? Shoot me a DM on discord! username: arcane26</h1>
+        <h4>'Elite: Dangerous' name is a registered trademark of Frontier Developments plc. All rights reserved. Other trademarks therein belong to their respective owners.</h4>
+        <h4>Elite: Dangerous Green Gas Giants (edGGG) is not affiliated with Frontier Developments</h4>
+    </footer>
+</body>
+</html>

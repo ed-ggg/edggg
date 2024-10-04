@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>edGGG | Catalog of Green Gas Giants</title>
+    <link rel="stylesheet" href="./search/indexStyles.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.png">
+</head>
+<body>
+    <header>
+        <a href='#'><img src="./resources/logo.png"/></a>
+        <h3><em>The Catalog for Green Gas Giants in Elite: Dangerous</em></h3>
+        <nav>
+            <h2><a href="./about/">About GGGs</a></h2>
+            <h2><a href="#planets">Search</a></h2>
+            <h2><a href="#new-this-year">New This Year</a></h2>
+        </nav>
+    </header>
+    <main>
+        <section id="planets">
+            <div id="planets-container">
+                <div>
+                <h1>Search</h1>
+                <div class="search-box">
+                    <div class="row">
+                        <input type="text" id="input-box" placeholder="Search 55 GGGs by name..." autocomplete="off">
+                        <button onclick='searchFunction()'class="material-symbols-outlined">
+                            search
+                        </button>
+                    </div>
+                    <div class="result-box">
+                       
+                    </div>
+                </div>
+                </div>
+                <div id="planets-flex">
+                    <div class="planet-card">
+                        <a href = './class-searches/class1/'><img src="./resources/gggs/NyeajaaeIT-Mc9-19.png"></a>
+                        <h2 class="card-title">Class I</h2>
+                    </div>
+                    <div class="planet-card">
+                        <a href = './class-searches/class2/'><img src="./resources/gggs/Slegi DH-J d10-27 5.png"></a>
+                        <h2 class="card-title">Class II</h2>
+                    </div>
+                    <div class="planet-card">
+                        <a href="./class-searches/class3/"><img src="./resources/gggs/Gludgoea AA-A e25 ABCD 3.png"></a>
+                        <h2 class="card-title">Class III</h2>
+                    </div>
+                    <div class="planet-card">
+                        <a href="./class-searches/class4/"><img src="./resources/gggs/Eor Aowsy GR-W e1-1381 AB 1.png"></a>
+                        <h2 class="card-title">Class IV</h2>
+                    </div>
+                    <div class="planet-card">
+                        <a href="./class-searches/ggwbl/"><img src="./resources/gggs/ThaileiaPJ-OD7-74.png"></a>
+                        <h2 class="card-title"> Water-Based Life</h2>
+                    </div>
+                    <div class="planet-card">
+                        <a href="./class-searches/ggabl/"><img src="./resources/gggs/Col285SectorVU-Mc8-1.png"></a>
+                        <h2 class="card-title">Ammonia-Based Life</h2>
+                    </div>
+                    <div class="planet-card">
+                        <a href="./class-searches/watergiant/"><img src="./resources/gggs/Eimbaith LW-W e1-290 7.png"></a>
+                        <h2 class="card-title">Water Giant</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="new-this-year">
+            <div id="new-planets-container">
+                <h1>New Green Gas Giants Discovered This Year</h1>
+                <div id="new-planets-flex">
+                    <div class="new-planet-card">
+                        <a href='./planets/ggg52/'><img src="./class-searches/class2/c2-pics/Blu Thua IS-B c13-6 2.png"></a>
+                        <h2>Blu Thua IS-B c13-6 2</h2>
+                        <h4>CMDR Jacob Astor — 3310-03-09</h4>
+                    </div>
+                    <div class="new-planet-card">
+                        <a href='./planets/ggg53/'><img src="./class-searches/class1/c1-pics/Wregoe ND-Z d1-0 C 7.png"></a>
+                        <h2>Wregoe ND-Z d1-0 C 7</h2>
+                        <h4>CMDR PEJOTA62TATANKA — 3310-04-19</h4>
+                    </div>
+                    <div class="new-planet-card">
+                        <a href='./planets/ggg54/'><img src="./class-searches/class1/c1-pics/Eos_Aowsy_FG-Y_d747_BC_4_190824_041857.png"></a>
+                        <h2>Eos Aowsy FG-Y d747 BC 4</h2>
+                        <h4>CMDR Mopsi Thomsen — 3310-07-19</h4>
+                    </div>
+                    <div class="new-planet-card">
+                        <a href='./planets/ggg55/'><img src="./class-searches/class2/c2-pics/Braisoo_HD-Q_d6-11_9_190824_160153.png"></a>
+                        <h2>Braisoo HD-Q d6-11 9</h2>
+                        <h4>CMDR DiaFleXXX — 3310-08-01</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h2>Suggestions? Shoot me a DM on discord! username: arcane26</h2>
+        <h4>'Elite: Dangerous' name is a registered trademark of Frontier Developments plc. All rights reserved. Other trademarks therein belong to their respective owners.</h4>
+        <h4>Elite: Dangerous Green Gas Giants (edGGG) is not affiliated with Frontier Developments</h4>
+    </footer>
+    <script src="./search/index.js" ></script>
+    <script src="./search/search.js" ></script>
+</body>
+</html>

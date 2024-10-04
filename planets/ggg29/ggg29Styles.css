@@ -1,0 +1,10 @@
+#dot {
+    top: 291px; 
+    left: 184px;
+}
+@media only screen and (max-width: 615px) {
+    #dot {
+        left:90px;
+        top:142px;
+    }
+}
