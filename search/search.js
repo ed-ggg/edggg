@@ -172,6 +172,9 @@ const searchFunction = () => {
             case "braisoo hd-q d6-11 9":
                 window.open('./planets/ggg55','_self');
                 break;
+            case "eowyg ail dr-v d2-0 a 1":
+                window.open('./planets/ggg56','_self');
+                break;
         }
     }
 }
