@@ -175,6 +175,9 @@ const searchFunction = () => {
             case "eowyg ail dr-v d2-0 a 1":
                 window.open('./planets/ggg56','_self');
                 break;
+            case "nyuena ac-b d14-245 7":
+                window.open('./planets/ggg57','_self');
+                break;
         }
     }
 }
