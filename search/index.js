@@ -51,6 +51,7 @@ let allGGGs = [
     'Lysoovsky BH-L d8-26 3',
     'Noijo YG-T d4-97 A 1',
     'Nyeajaae IT-M c9-19 3',
+    'Nyuena AC-B d14-245 7',
     'Oochody AA-Y c17-1 2',
     'Pheia Aewsy LV-Y d11 B 4',
     'Plaa Ain YH-G b13-0 A 8',
