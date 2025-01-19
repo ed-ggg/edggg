@@ -1,4 +1,0 @@
-<meta property="og:image" content="https://ed-ggg.github.io/edggg/planets/">
-    <meta property="og:title" content="edGGG | ">
-    <meta property="og:site_name" content="Elite: Dangerous Green Gas Giants">
-    <meta property="og:description" content="">
