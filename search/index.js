@@ -56,6 +56,7 @@ let allGGGs = [
     'Pheia Aewsy LV-Y d11 B 4',
     'Plaa Ain YH-G b13-0 A 8',
     'Plieliae SM-C c29-11 B 3',
+    'Ploea Eurl KQ-B c27-7 2',
     'Ploi Thua AY-T b3-0 2',
     'Praea Euq VP-M c21-1 1',
     'Pro Flee UY-Q c18-0 2',

@@ -178,6 +178,9 @@ const searchFunction = () => {
             case "nyuena ac-b d14-245 7":
                 window.open('./planets/ggg57','_self');
                 break;
+            case "ploea eurl kq-b c27-7 2":
+                window.open('./planets/ggg58','_self');
+                break;
         }
     }
 }
