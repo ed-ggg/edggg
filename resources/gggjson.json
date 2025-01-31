@@ -405,5 +405,12 @@
         "x": 2741.09375,
         "y":  141.59375,
         "z":  128.5937
-       }   
+       },
+       {
+        "pin": "green",
+        "text": "Phrio Hype BB-W e2-8 12 a\nhttps://ed-ggg.github.io/edggg/planets/ggg59/",
+        "x": 4380.59375,
+        "y":  -145.875,
+        "z":  -6854.5625
+       }  
     ]}

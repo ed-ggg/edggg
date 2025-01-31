@@ -181,6 +181,9 @@ const searchFunction = () => {
             case "ploea eurl kq-b c27-7 2":
                 window.open('./planets/ggg58','_self');
                 break;
+            case "phrio hype bb-w e2-8 12 a":
+                window.open('./planets/ggg59','_self');
+                break;
         }
     }
 }
