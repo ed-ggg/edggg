@@ -15,12 +15,12 @@ Other features that are or will be included in the future are:
 * GGGs Discovered On This Day
 
 #### New GGGs This Year
-This section is be located on the site's index.html landing page. It will be an almost-fully automated process, detecting new GGGs discovered via EDDN and adding it to this portion of the webpage. At the beginning of each year, this section
+This section is located on the site's index.html landing page. It will be an almost-fully automated process, detecting new GGGs discovered via EDDN and adding it to this portion of the webpage. At the beginning of each year, this section
 will reset to be empty for new ones to be added.
 
 #### GGGs Discovered On This Day
 A separate section that will take the date on the user's computer and see if any of the GGGs on the database match the month/day, then display them. They will be clickable and will take the user to that specific GGG page.
-## How To Use (Currently)
+## How To Use
 Upon landing at EDGGG's index.html page, there is a 'Search' section and a 'New GGGs This Year' section, for the current in-game year. 
 
 ### Search
@@ -30,10 +30,10 @@ All known GGG Classes are located here, which when clicked will take you to that
 Each known GGG has its own page where a carousel of pictures of it are displayed as well as its name, characteristics, a description, its community name, and where it is located in the in-game galaxy.
 
 ### GGGs Discovered This Year
-GGGs found during the current in-game will show up here. At the beginning of each year, the section is emptied for new ones to be found in the new year.
+GGGs found during the current in-game year will show up here. At the beginning of each year, the section is emptied for new ones to be found in the new year.
 
 ### Nav Bar
-The Nav Bar is currently present across the entire site. Clicking 'About' will in the future bring you to an informational about what exactly these planets are, their history, as well as how to use the site. Clicking 'Search' returns you to index.html to the
+The Nav Bar is currently present across the entire site. Clicking 'About' brings you to an informational about what exactly these planets are, their history, as well as how to use the site. Clicking 'Search' returns you to index.html to the
 'Search' area for classes. Clicking 'New This Year' will bring you to the bottom of index.html where new GGGs are listed.
 
 ## Technologies
