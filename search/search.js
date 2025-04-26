@@ -184,6 +184,9 @@ const searchFunction = () => {
             case "phrio hype bb-w e2-8 12 a":
                 window.open('./planets/ggg59','_self');
                 break;
+            case "shrogaae cw-l c8-87 5":
+                window.open('./planets/ggg60','_self');
+                break;
         }
     }
 }

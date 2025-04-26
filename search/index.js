@@ -64,6 +64,7 @@ let allGGGs = [
     'Pru Thae BF-C c27-1 1',
     'Pyroifoea SS-Y b15-0 11',
     'Shaulai DL-P d5-274 7',
+    'Shrogaae CW-L c8-87',
     'Slegi DH-J d10-27 5',
     'Squern AF-N c21-0 4',
     'Synookio EI-J d9-1 7',

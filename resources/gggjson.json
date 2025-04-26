@@ -412,5 +412,12 @@
         "x": 4380.59375,
         "y":  -145.875,
         "z":  -6854.5625
-       }  
+       },
+       {
+        "pin": "green",
+        "text": "Shrogaae CW-L c8-87 5\nhttps://ed-ggg.github.io/edggg/planets/ggg60/",
+        "x": 4205.03125,
+        "y":  336.625,
+        "z":  21087.6875
+       }
     ]}
