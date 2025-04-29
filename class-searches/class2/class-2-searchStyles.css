@@ -216,7 +216,7 @@ html, body {
 
 @media only screen and (max-width: 850px) {
     #planets-container-flex {
-        margin-top: 220px;
+        margin-top: 290px;
     }
 }
 
@@ -236,12 +236,12 @@ html, body {
 }
 @media only screen and (max-width: 445px) {
     #planets-container-flex {
-        margin-top: 350px;
+        margin-top: 420px;
     }
 }
 
 @media only screen and (max-width: 350px) {
     #planets-container-flex {
-        margin-top: 500px;
+        margin-top: 530px;
     }
 }

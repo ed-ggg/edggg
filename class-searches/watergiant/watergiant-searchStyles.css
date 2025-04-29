@@ -95,7 +95,7 @@ main{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 8rem;
 }
 
 #planets-container-flex h4 {
@@ -212,7 +212,7 @@ html, body {
 
 @media only screen and (max-width: 850px) {
     #planets-container-flex {
-        margin-top: 220px;
+        margin-top: 270px;
     }
 }
 
@@ -237,13 +237,13 @@ html, body {
     }
 
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 490px) {
     #planets-container-flex {
         margin-top: 500px;
     }
 }
 
-@media only screen and (max-width: 385px) {
+@media only screen and (max-width: 415px) {
     #planets-container-flex {
         margin-top: 700px;
     }

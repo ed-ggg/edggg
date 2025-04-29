@@ -229,7 +229,7 @@ html, body {
         width: 75%;
     }
 }
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 460px) {
     #planets-container-flex {
         margin-top: 350px;
     }
