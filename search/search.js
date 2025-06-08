@@ -187,6 +187,9 @@ const searchFunction = () => {
             case "shrogaae cw-l c8-87 5":
                 window.open('./planets/ggg60','_self');
                 break;
+            case "wredgo bq-y f0 d 8 a":
+                window.open('./planets/ggg61','_self');
+                break;
         }
     }
 }

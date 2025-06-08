@@ -419,5 +419,12 @@
         "x": 4205.03125,
         "y":  336.625,
         "z":  21087.6875
+       },
+       {
+        "pin": "green",
+        "text": "Wredgo BQ-Y f0 D 8 a\nhttps://ed-ggg.github.io/edggg/planets/ggg61/",
+        "x": -12402.68750,
+        "y":  927.500,
+        "z":  -475.78125
        }
     ]}

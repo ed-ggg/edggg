@@ -73,6 +73,7 @@ let allGGGs = [
     'Thaileia PJ-O d7-74 D 3',
     'Vegnao PA-S c6-43 3',
     'Wembaei UM-A b57-4 1',
+    'Wredgo BQ-Y f0 D 8 a',
     'Wregoe ND-Z d1-0 C 7'
 ];
 
