@@ -87,6 +87,14 @@ main{
     text-align: left;
 }
 
+a.class-change {
+    text-decoration: none;
+    color: white;
+}
+
+a.class-change:visited {
+    color:white;
+}
 /* PLANET CONTAINER */
 
 #planets-container-flex {

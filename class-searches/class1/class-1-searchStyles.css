@@ -83,6 +83,15 @@ main{
     margin: 0 auto;
 }
 
+a.class-change {
+    text-decoration: none;
+    color: white;
+}
+
+a.class-change:visited {
+    color:white;
+}
+
 #lead-desc p {
     text-align: left;
 }
