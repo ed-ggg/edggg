@@ -70,6 +70,7 @@ button {
     outline: 0;
     color: black;
     background: white;
+    height: 1.64rem;
 }
 button:hover {
     cursor: pointer;
