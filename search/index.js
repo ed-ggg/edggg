@@ -54,6 +54,7 @@ let allGGGs = [
     'Nyuena AC-B d14-245 7',
     'Oochody AA-Y c17-1 2',
     'Pheia Aewsy LV-Y d11 B 4',
+    'Phraa Eaec ER-I c11-1 11',
     'Phrio Hype BB-W e2-8 12 a',
     'Plaa Ain YH-G b13-0 A 8',
     'Plieliae SM-C c29-11 B 3',

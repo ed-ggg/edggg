@@ -190,6 +190,9 @@ const searchFunction = () => {
             case "wredgo bq-y f0 d 8 a":
                 window.open('./planets/ggg61','_self');
                 break;
+            case "phraa eaec er-i c11-1 11":
+                window.open('./planets/ggg62','_self');
+                break;   
         }
     }
 }
