@@ -2,10 +2,15 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: Eurostile;
+    src: url(../../resources/EUROSTILE.TTF);
+    font-weight: 600;
+}
 
 body {
     color: #f07b05;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Eurostile', sans-serif;
     margin: 0 auto;
     background-color: rgb(11,11,11);
     box-sizing: border-box;

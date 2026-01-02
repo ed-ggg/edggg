@@ -2,14 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
-
+@font-face {
+    font-family: Eurostile;
+    src: url(../resources/EUROSTILE.TTF);
+    font-weight:600;
+}
 body {
     color: #f07b05;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Eurostile', 'Jura', sans-serif;
     margin: 0 auto;
     background-color: rgb(11,11,11);
     box-sizing: border-box;
     text-decoration: none;
+    letter-spacing: .06rem;
 }
 
 hr {
@@ -201,8 +206,17 @@ main{
     border: 1px solid gray;
     transition: .25s;
 }
+
 .planet-card:hover {
     color: #00FF00;
+}
+
+.planet-card a h2:hover {
+    color: #00ff00;
+}
+
+.card-title span {
+    color: rgb(194, 194, 194);
 }
 
 #planets-flex {

@@ -5,9 +5,14 @@ html {
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Eurostile;
+    src: url(./EUROSTILE.TTF);
+    font-weight:600;
+}
 body {
     color: #f07b05;
-    font-family: 'Jura', sans-serif;
+    font-family: 'Eurostile','Jura', sans-serif;
     margin: 0 auto;
     background-color: rgb(11,11,11);
     box-sizing: border-box;
