@@ -193,6 +193,9 @@ const searchFunction = () => {
             case "phraa eaec er-i c11-1 11":
                 window.open('./planets/ggg62','_self');
                 break;   
+            case "juenoea jn-j d9-7667 ab 5":
+                window.open('./planets/ggg63','_self');
+                break;
         }
     }
 }

@@ -48,6 +48,7 @@ let allGGGs = [
     'Gongae QW-L c24-0 2',
     'Graea Hypue BX-U b6-0 AB 3',
     'Hypao Chraea VQ-T d4-8 B 1',
+    'Juenoea JN-J d9-7667 AB 5',
     'Lysoovsky BH-L d8-26 3',
     'Noijo YG-T d4-97 A 1',
     'Nyeajaae IT-M c9-19 3',
