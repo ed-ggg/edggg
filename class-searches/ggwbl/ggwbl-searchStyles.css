@@ -138,6 +138,16 @@ a.class-change:visited {
     color: rgb(220,220,220);
 }
 
+.colonized::after{
+    background-image: url('../../resources/colonize.png');
+    background-size: 25px 20px;
+    width: 30px;
+    height: 25px;
+    content: '';
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
 .k10::after{
     background-image: url('../../resources/k10.png');
     background-size: 30px 30px;
