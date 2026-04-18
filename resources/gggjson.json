@@ -436,9 +436,17 @@
        },
        {
         "pin": "green",
-        "text": "Juenoea JN-J d9-7667\nhttps://ed-ggg.github.io/edggg/planets/ggg63/",
+        "text": "Juenoea JN-J d9-7667 AB 5\nhttps://ed-ggg.github.io/edggg/planets/ggg63/",
         "x": -5838.4375,
         "y":  -797.781,
         "z":  26692.4375
+       },
+       {
+        "pin": "green",
+        "text": "Aemonz UT-R d4-36 10 a\nhttps://ed-ggg.github.io/edggg/planets/ggg64/",
+        "x": 4283.46875,
+        "y":  -1050.0625,
+        "z":  33920.6875 
        }
+
     ]}

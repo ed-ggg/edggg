@@ -196,6 +196,9 @@ const searchFunction = () => {
             case "juenoea jn-j d9-7667 ab 5":
                 window.open('./planets/ggg63','_self');
                 break;
+            case "aemonz ut-r d4-36 10 a":
+                window.open('./planets/ggg64','_self');
+                break;
         }
     }
 }
