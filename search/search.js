@@ -199,6 +199,9 @@ const searchFunction = () => {
             case "aemonz ut-r d4-36 10 a":
                 window.open('./planets/ggg64','_self');
                 break;
+            case "systimbu wj-r e4-720 10":
+                window.open('./planets/ggg65','_self');
+                break;
         }
     }
 }

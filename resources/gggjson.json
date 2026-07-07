@@ -447,6 +447,13 @@
         "x": 4283.46875,
         "y":  -1050.0625,
         "z":  33920.6875 
+       },
+       {
+        "pin": "green",
+        "text": "Systimbu WJ-R e4-720 10\nhttps://ed-ggg.github.io/edggg/planets/ggg65/",
+        "x":  -595.4375,
+        "y":  -1012.28125,
+        "z":  27968.6875
        }
 
     ]}
