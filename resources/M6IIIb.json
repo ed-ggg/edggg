@@ -1,0 +1,416 @@
+{
+    "markers": [
+      {
+        "pin": "orange",
+        "text": "Prooe Hype TT-R d4-0 A\nCJ6 IIIb",
+        "x": 10612.84375,
+        "y":  -1063.21875,
+        "z":  8347.75
+      },
+      {
+        "pin": "orange",
+        "text": "Dryeae Aoscs UO-X d2-2 A\nCJ6 IIIb",
+        "x": 13727.15625,
+        "y":  1178,
+        "z":  18415.03125
+      },
+      {
+        "pin": "orange",
+        "text": "Cyaumie OZ-G d10-1\nCN6 IIIb",
+        "x": 25551.34375,
+        "y":  -1078.59375,
+        "z":  42059.5625
+      },
+      {
+        "pin": "orange",
+        "text": "Chaleau NM-C d0\nCN6 IIIb",
+        "x": 2263.34375,
+        "y":  -1535.53125,
+        "z":  5347.28125
+      },
+      {
+        "pin": "orange",
+        "text": "Graei Eorg KB-X d1-0 A\nCN6 IIIb",
+        "x": -23740.09375,
+        "y":  -1057.9375,
+        "z":  2945.03125
+      },
+      {
+        "pin": "orange",
+        "text": "Pueloea QO-X d2-7 A\nCN6 IIIb",
+        "x": 3214.65625,
+        "y":  1182.96875,
+        "z":  13334.46875
+      },
+      {
+        "pin": "orange",
+        "text": "Choifio EI-Z d1-6\nCN6 IIIb",
+        "x": 6382.46875,
+        "y":  -1363.875,
+        "z":  5526.96875
+      },
+      {
+        "pin": "orange",
+        "text": "Puelio JZ-D d13-90 A\nCN6 IIIb",
+        "x": 1802.6875,
+        "y":  1121.40625,
+        "z":  14160.4375
+      },
+      {
+        "pin": "orange",
+        "text": "Spasou QO-I d9-0\nCN6 IIIb",
+        "x": 22025.09375,
+        "y":  -1215.03125,
+        "z":  33027.5625
+      },
+      {
+        "pin": "orange",
+        "text": "Phielau ZG-S d5-2\nCN6 IIIb",
+        "x": 10611.90625,
+        "y":  -1317.90625,
+        "z":  8439.40625
+      },
+      {
+        "pin": "orange",
+        "text": "Prua Prau ST-I d9-1\nCN6 IIIb",
+        "x": 4494.0625,
+        "y":  -1101.03125,
+        "z":  41993.46875
+      },
+      {
+        "pin": "orange",
+        "text": "Froawns KT-F d12-45\nCN6 IIIb",
+        "x": 4758.125,
+        "y":  1151.8125,
+        "z":  15405.375
+      },
+      {
+        "pin": "orange",
+        "text": "Flyue Hype DP-A d0\nCN6 IIIb",
+        "x": 30108.6875,
+        "y":  -1058.09375,
+        "z":  6624.46875
+      },
+      {
+        "pin": "orange",
+        "text": "Byua Trae MH-D d12-1\nCN6 IIIb",
+        "x": 10026.15625,
+        "y":  1349.8125,
+        "z":  6377.78125
+      },
+      {
+        "pin": "orange",
+        "text": "Hyiechooe NS-A d1-1\nCN6 IIIb",
+        "x": 9662,
+        "y":  1071.8125,
+        "z":  47691.375
+      },
+      {
+        "pin": "orange",
+        "text": "Smojaae HJ-O d7-1\nCN6 IIIb",
+        "x": 25691,
+        "y":  1055.9375,
+        "z":  3421.5625
+      },
+      {
+        "pin": "orange",
+        "text": "Myalau JI-K d8-2\nCN6 IIIb",
+        "x": 5143.4375,
+        "y":  1336.96875,
+        "z":  6077.59375
+      },
+      {
+        "pin": "orange",
+        "text": "Systipoi ZA-O d6-6\nCN6 IIIb",
+        "x": 17983.8125,
+        "y":  -1072.21875,
+        "z":  27713.8125
+      },
+      {
+        "pin": "orange",
+        "text": "Phrooe Proae ZD-T d3-31\nCN6 IIIb",
+        "x": -11951.09375,
+        "y":  -1170.375,
+        "z":  26202.28125
+      },
+      {
+        "pin": "orange",
+        "text": "Dryeae Aoscs UO-X d2-2\nCN6 IIIb",
+        "x": 13727.15625,
+        "y":  1178,
+        "z":  18415.03125
+      },
+      {
+        "pin": "orange",
+        "text": "Thailae VU-G d10-6\nCN6 IIIb",
+        "x": 1656.15625,
+        "y":  -1174.90625,
+        "z":  5001.65625
+      },
+      {
+        "pin": "orange",
+        "text": "Flyue Greou KK-C d14-0\nCN6 IIIb",
+        "x": 19620,
+        "y":  -1382.5,
+        "z":  51346.4375
+      },
+      {
+        "pin": "orange",
+        "text": "Foesks BT-U d2-58\nCN6 IIIb",
+        "x": 4983.34375,
+        "y":  1288.5625,
+        "z":  15841.4375
+      },
+      {
+        "pin": "red",
+        "text": "Pra Pra LH-C d0\nM6 IIIb",
+        "x": 16015.90625,
+        "y":  -1612.96875,
+        "z":  41182.3125
+      },
+      {
+       "pin": "red",
+        "text": "Cheia Dryoae HB-X d1-0\nM6 IIIb",
+        "x": 8073.625,
+        "y":  -985.25,
+        "z":  60585.875
+      },
+      {
+        "pin": "red",
+        "text": "Skaudaea DK-I d9-0\nM6 IIIb",
+        "x": 10152.65625,
+        "y":  -1289.8125,
+        "z":  10052.4375
+       },
+       {
+        "pin": "red",
+        "text": "Chroavvy OO-I d9-34\nM6 IIIb",
+        "x": 3957.75,
+        "y":  1359,
+        "z":  15169.9375
+       },
+       {
+        "pin": "red",
+        "text": "Flya Prau MI-K d8-1\nM6 IIIb",
+        "x": 25907.375,
+        "y": -1189.21875,
+        "z":  40642.03125
+       },
+       {
+        "pin": "red",
+        "text": "Screagi SR-H d11-1\nM6 IIIb",
+        "x": -1341.0625,
+        "y": -1364.09375,
+        "z":  2460.875
+       },
+       {
+        "pin": "red",
+        "text": "Ingoll KA-A d1\nM6 IIIb",
+        "x": -8203.875,
+        "y": 1290.6875,
+        "z":  2788.28125
+       },
+       {
+        "pin": "red",
+        "text": "Swuemao UZ-P d5-0\nM6 IIIb",
+        "x": -25466.25,
+        "y": -1015.125,
+        "z":  49396.34375
+       },
+       {
+        "pin": "red",
+        "text": "Hypuejua YE-R d4-106\nM6 IIIb",
+        "x": -11230.3125,
+        "y": -1294.4375,
+        "z":  27574.625
+       },
+       {
+        "pin": "red",
+        "text": "Thraikai PI-Z d1-0\nM6 IIIb",
+        "x": -14533.625,
+        "y": 1183.6875,
+        "z": 6789.8125
+       },
+       {
+        "pin": "red",
+        "text": "Aucops HG-O d6-0\nM6 IIIb",
+        "x": 3375.15625,
+        "y": -1060.0625,
+        "z": 2063.9375
+       },
+       {
+        "pin": "red",
+        "text": "Bleia Phrae DK-Z d0\nM6 IIIb",
+        "x": 7221.90625,
+        "y": -2040.65625,
+        "z": 14418.1875
+       },
+       {
+        "pin": "red",
+        "text": "Flyeeleia DM-J d10-0\nM6 IIIb",
+        "x": 2420.78125,
+        "y": -2655.96875,
+        "z": 38229.3125
+       },
+       {
+        "pin": "red",
+        "text": "Pra Pra JC-T d4-1\nM6 IIIb",
+        "x": 16019.5625,
+        "y": -1784.34375,
+        "z": 41577.84375
+       },
+       {
+        "pin": "red",
+        "text": "Rutchao QK-C d14-1\nM6 IIIb",
+        "x": -29819.125,
+        "y": 1182.90625,
+        "z": 50060.0625
+       },
+       {
+        "pin": "red",
+        "text": "Byoo Trae CE-T d3-0\nM6 IIIb",
+        "x": 30573.40625,
+        "y": 1413.25,
+        "z": 5714.59375
+       },
+       {
+        "pin": "red",
+        "text": "Sleguae YN-T d3-4\nM6 IIIb",
+        "x": -2749,
+        "y": -1021.4375,
+        "z": -3293.625
+       },
+       {
+        "pin": "red",
+        "text": "Phrua Flyuae FW-W d1-37\nM6 IIIb",
+        "x": 11612.5625,
+        "y": -1122.21875,
+        "z":  23424.59375
+       },
+       {
+        "pin": "red",
+        "text": "Greou Scheau VB-J d10-0\nM6 IIIb",
+        "x": -27963.09375,
+        "y": -1528,
+        "z":  13905.375
+       },
+       {
+        "pin": "red",
+        "text": "Sqeths KX-A d1-0\nM6 IIIb",
+        "x": -26301.8125,
+        "y": -1450.25,
+        "z":  13105.5
+       },
+       {
+        "pin": "red",
+        "text": "Dryeia Prao YF-O d6-0\nM6 IIIb",
+        "x": 23164.8125,
+        "y": -1056.75,
+        "z": 21286.65625
+       },
+       {
+        "pin": "red",
+        "text": "Praea Aerb CE-T d3-1\nM6 IIIb",
+        "x": 1072.90625,
+        "y": 1410.3125,
+        "z": 8288.03125
+       },
+       {
+        "pin": "red",
+        "text": "Xeangia NT-Q d5-0\nM6 IIIb",
+        "x": 5307.71875,
+        "y": 1872.75,
+        "z": -5657.96875
+       },
+       {
+        "pin": "red",
+        "text": "Fachia SO-R d4-1\nM6 IIIb",
+        "x": 12942.53125,
+        "y": -1099.5,
+        "z": 45481.375
+       },
+       {
+        "pin": "orange",
+        "text": "Flyumbai RI-K d8-0\nMS6 IIIb",
+        "x": -9507.125,
+        "y": -1176.75,
+        "z": 57291.5
+       },
+       {
+        "pin": "orange",
+        "text": "Tyroorst DC-D d12-0\nMS6 IIIb",
+        "x": -11342.3125,
+        "y": -1302.65625,
+        "z": -10251.125
+       },
+       {
+        "pin": "orange",
+        "text": "Teakoi IM-W d1-5\nMS6 IIIb",
+        "x": -2593.875,
+        "y": 1293.71875,
+        "z": 6804.15625
+       },
+       {
+        "pin": "orange",
+        "text": "Thailoea JR-N d6-1\nS6 IIIb",
+        "x": -4591.78125,
+        "y": -1279.5,
+        "z": 4655.1875
+       },
+       {
+        "pin": "orange",
+        "text": "Grie Dryoi IO-O d7-7\nS6 IIIb",
+        "x": -18880.625,
+        "y": -1427.3125,
+        "z": 5975.59375
+       },
+       {
+        "pin": "orange",
+        "text": "Thaila WK-F d11-6\nS6 IIIb",
+        "x": 5539.46875,
+        "y": -1005.53125,
+        "z": 5070.59375
+       },
+       {
+        "pin": "orange",
+        "text": "Flyooe Phio TT-I d9-4\nS6 IIIb",
+        "x": 8394.875,
+        "y": -1112.53125,
+        "z": 10006.125
+       },
+       {
+        "pin": "orange",
+        "text": "Iowhaiscs SE-X d2-1\nS6 IIIb",
+        "x": -26407.375,
+        "y": 1076.96875,
+        "z": 15866.5
+       },
+       {
+        "pin": "orange",
+        "text": "Aucownst BQ-G d10-0\nS6 IIIb",
+        "x": -7016.78125,
+        "y": -1298.375,
+        "z": 2377.6875
+       },
+       {
+        "pin": "orange",
+        "text": "Myumbie YQ-T d4-0\nS6 IIIb",
+        "x": 11789.84375,
+        "y": -1541.4375,
+        "z": 22386.71875
+       },
+       {
+        "pin": "orange",
+        "text": "Tegneia PN-T d3-2\nS6 IIIb",
+        "x": 17051.9375,
+        "y": -1001.5,
+        "z": 36434.78125
+       },
+       {
+        "pin": "orange",
+        "text": "Oenag GX-B d0\nS6 IIIb",
+        "x": 12768.53125,
+        "y": -1758.375,
+        "z": 46347.34375
+       }
+    ]}
