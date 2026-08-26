@@ -30,6 +30,7 @@ let allGGGs = [
     'Byoomi XE-X d2-7844 4',
     'Col 285 Sector VU-M c8-1 4',
     'Cryaa Ain ZJ-R e4-4 A 3',
+    'Dryaa Blou ER-V d2-2967 A 1',
     'Dryoea Prao FH-S d5-3063 9',
     'Dryooe Flyou XS-Z c14-199 4',
     'Dryooe Groa QX-F c16 A 7',

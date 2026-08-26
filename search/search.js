@@ -202,6 +202,9 @@ const searchFunction = () => {
             case "systimbu wj-r e4-720 10":
                 window.open('./planets/ggg65','_self');
                 break;
+            case "dryaa blou er-v d2-2967 a 1":
+                window.open('./planets/ggg66','_self');
+                break;
         }
     }
 }
