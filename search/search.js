@@ -205,6 +205,9 @@ const searchFunction = () => {
             case "dryaa blou er-v d2-2967 a 1":
                 window.open('./planets/ggg66','_self');
                 break;
+            case "phraa flya hy-s c20-59 2":
+                window.open('./planets/ggg67','_self');
+                break;
         }
     }
 }
