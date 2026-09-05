@@ -208,6 +208,9 @@ const searchFunction = () => {
             case "phraa flya hy-s c20-59 2":
                 window.open('./planets/ggg67','_self');
                 break;
+            case "eoch flyuae in-j d9-1112 ab 5":
+                window.open('./planets/ggg68','_self');
+                break;
         }
     }
 }

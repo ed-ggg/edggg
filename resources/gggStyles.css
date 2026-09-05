@@ -298,6 +298,15 @@ html, body {
 
 /* RESPONSIVE BODY */
 
+@media only screen and (min-width: 1921px) {
+    #info-container {
+        justify-content: center;
+    }
+    table {
+        margin: 0 2rem;
+    }
+}
+
 @media only screen and (max-width: 1700px) {
     table {
         margin: 0 2rem;

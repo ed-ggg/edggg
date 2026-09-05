@@ -37,6 +37,7 @@ let allGGGs = [
     'Dryooe Prou FF-Z d696 5',
     'Eafoff LN-Q d6-0 1',
     'Eimbaith LW-W e1-290 7',
+    'Eoch Flyuae IN-J d9-1112 AB 5',
     'Eodgorph LM-W e1-167 BCD 8',
     'Eol Prou KW-L c8-32 4',
     'Eor Aowsy GR-W e1-1381 AB 1',

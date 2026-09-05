@@ -180,6 +180,8 @@ main{
 #planets {
     text-align: center;
     background-image: linear-gradient(to bottom, rgb(0,0,0), rgb(11,11,11));
+    display: flex;
+    justify-content: center;
 }
 
 #planets-container {
@@ -188,6 +190,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    max-width: 1920px;
 }
 
 #planets h1 {
