@@ -211,6 +211,12 @@ const searchFunction = () => {
             case "eoch flyuae in-j d9-1112 ab 5":
                 window.open('./planets/ggg68','_self');
                 break;
+            case "blaa phoe np-t c5-198 4":
+                window.open('./planets/ggg69','_self');
+                break;
+            case "phrio phoea dm-u c19-5 6":
+                window.open('./planets/ggg70','_self');
+                break;
         }
     }
 }

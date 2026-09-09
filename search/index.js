@@ -16,6 +16,7 @@ newPlanetDivs.forEach((div,i) => {
 let allGGGs = [
     'Aemonz UT-R d4-36 10 a',
     'Blaa Hype TF-V d3-144 3',
+    'Blaa Phoe NP-T c5-198 4',
     'Bleia Dryiae HF-W b35-1 2',
     'Bleia Dryoae UV-C c29-52 3',
     'Blu Thua IS-B c13-6 2',
@@ -61,6 +62,7 @@ let allGGGs = [
     'Phraa Eaec ER-I c11-1 11',
     'Phraa Flya HY-S c20-59 2',
     'Phrio Hype BB-W e2-8 12 a',
+    'Phrio Phoea DM-U c19-5 6',
     'Plaa Ain YH-G b13-0 A 8',
     'Plieliae SM-C c29-11 B 3',
     'Ploea Eurl KQ-B c27-7 2',
