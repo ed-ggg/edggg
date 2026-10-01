@@ -217,6 +217,12 @@ const searchFunction = () => {
             case "phrio phoea dm-u c19-5 6":
                 window.open('./planets/ggg70','_self');
                 break;
+            case "m17 sector cf-y c1-23 2":
+                window.open('./planets/ggg71','_self');
+                break;
+            case "cyoilz jm-n b26-0 1":
+                window.open('./planets/ggg72','_self');
+                break;
         }
     }
 }

@@ -489,5 +489,19 @@
         "x":  3903.718,
         "y":  -130.343,
         "z":  -4034.09
+       },
+       {
+        "pin": "green",
+        "text": "M17 Sector CF-Y c1-23 2\nhttps://ed-ggg.github.io/edggg/planets/ggg71/",
+        "x":  -933.68,
+        "y":  -1.81,
+        "z":  3862.5
+       },
+       {
+        "pin": "green",
+        "text": "Cyoilz JM-N b26-0 1\nhttps://ed-ggg.github.io/edggg/planets/ggg72/",
+        "x":  -4435.37,
+        "y":  -148.812,
+        "z":  -6885.18
        }
     ]}
