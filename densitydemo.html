@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header>
+        <nav>
+            <h2><a href="../about/">About GGGs</a></h2>
+            <h2><a href="../">Search</a></h2>
+            <h2><a href="../#new-this-year">New This Year</a></h2>
+        </nav>
+    </header>
+<title>How a GGG Happens</title>
+<style>
+/* HEADER */
+header {
+  font-family: 'Eurostile', 'Jura', sans-serif;
+    text-align: center;
+    background-image: linear-gradient(to right, green, black, black, black, black, black, green);
+    border-bottom: 2px solid rgba(15,15,15,.9);
+}
+
+header img {
+    height: auto;
+    width: 25%;
+    margin-top: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-image: linear-gradient(to right, green, black, rgb(9,9,9), rgb(9,9,9), rgb(9,9,9), black, green);
+}
+
+nav a {
+    text-decoration: none;
+    color: goldenrod;
+}
+
+nav a:hover {
+    color: white;
+}
+:root {
+  --bg: #f7f7f5; --card: #ffffff; --sunk: #f0efeb; --text: #1d1d1b; --muted: #5d5c57; --faint: #8a8984;
+  --line: #e2e0da; --line-strong: #c9c6be; --accent: #1f8a4c; --accent-bg: #e3f3e9; --warn: #9a5b00; --warn-bg: #fbefdc;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: rgb(11,11,11); --card: #1c1d1b; --sunk: #232421; --text: #ecebe6; --muted: #a9a8a1; --faint: #7d7c76;
+    --line: #2f302d; --line-strong: #474842; --accent: #5fd08c; --accent-bg: #18301f; --warn: #f0b45a; --warn-bg: #33270f;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141513; --card: #1c1d1b; --sunk: #232421; --text: #ecebe6; --muted: #a9a8a1; --faint: #7d7c76;
+  --line: #2f302d; --line-strong: #474842; --accent: #5fd08c; --accent-bg: #18301f; --warn: #f0b45a; --warn-bg: #33270f;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.7 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 780px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 28px; font-weight: 600; margin: 0 0 6px; letter-spacing: -0.01em; }
+h2 { font-size: 20px; font-weight: 600; margin: 0 0 10px; }
+h3 { font-size: 16px; font-weight: 600; margin: 18px 0 6px; }
+p { margin: 0 0 12px; }
+p:last-child { margin-bottom: 0; }
+.lede { font-size: 18px; color: var(--muted); margin-bottom: 8px; }
+.stamp { font-size: 13px; color: var(--faint); margin-bottom: 28px; }
+section { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; margin-bottom: 16px; }
+.kicker { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+ol.flow { margin: 0; padding-left: 0; list-style: none; counter-reset: s; }
+ol.flow > li { counter-increment: s; position: relative; padding: 0 0 16px 44px; }
+ol.flow > li:last-child { padding-bottom: 0; }
+ol.flow > li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--accent-bg); color: var(--accent); font-weight: 600; font-size: 14px; display: flex; align-items: center; justify-content: center; }
+ul.tight { margin: 6px 0 0; padding-left: 20px; }
+ul.tight li { margin-bottom: 6px; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 13px; }
+tr:last-child td { border-bottom: none; }
+.chip { display: inline-block; font-family: var(--mono); font-size: 13px; padding: 1px 8px; margin: 2px 4px 2px 0; border-radius: 999px;
+  background: var(--sunk); border: 1px solid var(--line); }
+.chip.new { background: var(--warn-bg); border-color: transparent; color: var(--warn); }
+pre { background: var(--sunk); border-radius: 10px; padding: 12px 14px; overflow-x: auto; font: 13.5px/1.6 var(--mono); margin: 8px 0 12px; }
+code { font-family: var(--mono); font-size: 14px; background: var(--sunk); padding: 1px 5px; border-radius: 4px; }
+.callout { border-left: 3px solid var(--accent); background: var(--accent-bg); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; }
+.status { border-left: 3px solid var(--warn); background: var(--warn-bg); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 10px 0; }
+svg text { fill: var(--text); font: 13px system-ui, sans-serif; }
+svg .soft { fill: var(--muted); font-size: 12px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 10px 0; }
+.grid label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 2px; }
+input, select { width: 100%; font: 15px system-ui, sans-serif; padding: 7px 9px; border-radius: 8px; border: 1px solid var(--line-strong);
+  background: var(--card); color: var(--text); }
+button { font: 14px system-ui, sans-serif; padding: 6px 12px; border-radius: 8px; border: 1px solid var(--line-strong); background: var(--sunk);
+  color: var(--text); cursor: pointer; margin: 0 6px 6px 0; }
+button:hover { border-color: var(--accent); }
+.verdict { font-weight: 600; font-size: 17px; margin: 8px 0 2px; }
+.hit td { background: var(--accent-bg); color: var(--accent); }
+.num { font-family: var(--mono); font-size: 14px; white-space: nowrap; }
+footer { color: var(--faint); font-size: 13px; text-align: center; margin-top: 24px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>How a Green Gas Giant happens</h1>
+<p class="lede">Every gas giant has 7 cloud layers, and each one has a temperature. The game colors each layer from a chart of temperature bands. A layer that lands exactly on the line between two bands gets no color. It stays the default green, and that's a GGG.</p>
+<p class="stamp">Last updated 5 Oct 2026.</p>
+
+<section>
+<div class="kicker">The idea in one minute</div>
+<ol class="flow">
+<li><strong>Seven cloud layers.</strong> Think of them as 7 rungs on a ladder. Each rung has a temperature.</li>
+<li><strong>A colour chart.</strong> The game picks each rung's color from a chart split into temperature bands.</li>
+<li><strong>The doorway.</strong> The chart only accepts a temperature strictly inside a band. A rung sitting exactly on the line between two bands belongs to neither. It gets no color, so it stays default green.</li>
+</ol>
+<div class="callout">Picture two rooms joined by a doorway. Someone standing exactly in the doorway is in neither room. These doorways are called <strong>cracks</strong>. A GGG is a planet with a rung standing in a doorway.</div>
+</section>
+
+<section>
+<div class="kicker">See it move</div>
+<h2>Play with the ladder</h2>
+<p class="small muted">Drag temperature and density, or pick an example. Each dot is a cloud rung. The bright lines are the doorways. When a rung lands exactly on one, the planet turns green.</p>
+<div id="viz-presets"></div>
+<div class="grid">
+  <div><label for="viz-type">Planet type</label><select id="viz-type"><option value="12">Class I gas giant</option><option value="10">Gas giant with water-based life</option></select></div>
+  <div><label for="viz-t">Surface temperature (K)</label><input id="viz-t" type="range" min="123" max="300" step="0.01" value="158"></div>
+  <div><label for="viz-d">Density (kg/m3)</label><input id="viz-d" type="range" min="0" max="1000" step="1" value="710"></div>
+</div>
+<div style="margin:2px 0 8px"><button id="viz-down">Temperature −1 smallest step</button><button id="viz-up">Temperature +1 smallest step</button></div>
+<div id="viz-svg"></div>
+<p id="viz-read" class="verdict" style="font-size:16px"></p>
+<p id="viz-note" class="small muted"></p>
+<p class="small muted">Band colors are only for illustration. This ladder skips the random nudge, so the temperature starts at 123 K.</p>
+</section>
+
+<section>
+<div class="kicker">Try any planet</div>
+<p class="small muted">Enter the numbers from a scan. It builds the ladder exactly as described above.</p>
+<div id="presets"></div>
+<div class="grid">
+  <div><label for="pt">Planet type</label><select id="pt">
+    <option value="12">Class I gas giant</option><option value="13">Class II gas giant</option><option value="14">Class III gas giant</option>
+    <option value="15">Class IV gas giant</option><option value="16">Class V gas giant</option><option value="10">Gas giant with water-based life</option>
+    <option value="11">Gas giant with ammonia-based life</option><option value="8">Water giant</option><option value="17">Helium-rich gas giant</option>
+    <option value="18">Helium gas giant</option></select></div>
+  <div><label for="ts">Surface temperature (K)</label><input id="ts" inputmode="decimal"></div>
+  <div><label for="em">Mass (Earth masses)</label><input id="em" inputmode="decimal"></div>
+  <div><label for="rk">Radius (km)</label><input id="rk" inputmode="decimal"></div>
+</div>
+<button id="go">Check</button>
+<div id="out"></div>
+</section>
+
+<section>
+<div class="kicker">The ladder</div>
+<h2>How the 7 rungs are placed</h2>
+<ol class="flow">
+<li><strong>The bottom rung is the surface temperature.</strong> That's the temperature in your journal or system map.</li>
+<li><strong>The ladder's reach.</strong> The rungs climb from there. How far they reach depends on temperature and density, where density is mass divided by volume. This is the "depth" Dr Ross talked about in Arcanic's video.
+<pre>reach   = 722.2 x (T / 1300)^1.2 x density^0.2
+density = MassEM x 5.97219e24 / (4/3 x pi x Radius^3)</pre>
+<p class="small muted">T in kelvin, density in kg/m3, Radius in metres. 5.97219e24 kg is one Earth mass.</p></li>
+<li><strong>A ceiling.</strong> The ladder can't reach past a ceiling. For colder classes it's 340 K.
+<table class="small" style="margin-top:6px">
+<tr><th>Surface temperature</th><th>Ceiling</th></tr>
+<tr><td>below 75 K</td><td>100 K</td></tr>
+<tr><td>75 to 330 K</td><td>340 K</td></tr>
+<tr><td>330 to 680 K</td><td>700 K</td></tr>
+<tr><td>680 to 900 K</td><td>1,200 K</td></tr>
+<tr><td>900 to 1,400 K</td><td>1,500 K</td></tr>
+<tr><td>above 1,400 K</td><td>5,000 K</td></tr>
+</table></li>
+<li><strong>Seven equal steps.</strong> The rungs are evenly spaced. The step is (the top, minus the surface temperature) divided by 7. The top is the reach or the ceiling, whichever comes first.</li>
+<li><strong>Exact numbers.</strong> The game keeps each rung to about 7 significant digits. A rung has to land exactly on a crack. Close doesn't count.</li>
+</ol>
+<div class="callout"><strong>Worked example: M17 Sector CF-Y c1-23 2.</strong> Surface 133.998352 K, density 1,062 kg/m3. The reach is about 190 K, so the top is about 324 K. That's below the 340 K ceiling, so density decides the step, which comes out at 27.2 K. The rungs are 134.0, 161.2, 188.4, 215.6, 242.8, <strong>270.000</strong>, 297.2. The sixth rung sits exactly on the 270 K crack, so M17 is green.</div>
+</section>
+
+<section>
+<div class="kicker">Three ways to stand in a doorway</div>
+<svg viewBox="0 0 680 390" width="100%" role="img" aria-label="Four ladders for water-life giants at 158, 176.667, 217.5 and 242 K. Each climbs to the 340 K ceiling in equal steps, and one rung on each sits exactly on the 210 K or 270 K crack.">
+  <line x1="90" y1="45" x2="640" y2="45" stroke="var(--line-strong)"/>
+  <text x="84" y="49" text-anchor="end" class="soft">340 K ceiling</text>
+  <line x1="90" y1="150" x2="640" y2="150" stroke="var(--accent)" stroke-dasharray="5 4"/>
+  <text x="84" y="154" text-anchor="end" class="soft">270 K</text>
+  <line x1="90" y1="240" x2="640" y2="240" stroke="var(--accent)" stroke-dasharray="5 4"/>
+  <text x="84" y="244" text-anchor="end" class="soft">210 K</text>
+  <g stroke="var(--line-strong)">
+    <line x1="160" y1="318" x2="160" y2="45"/><line x1="300" y1="290" x2="300" y2="45"/><line x1="440" y1="229" x2="440" y2="45"/><line x1="580" y1="192" x2="580" y2="45"/>
+  </g>
+  <g fill="var(--faint)">
+    <circle cx="160" cy="318" r="5"/><circle cx="160" cy="279" r="5"/><circle cx="160" cy="201" r="5"/><circle cx="160" cy="162" r="5"/><circle cx="160" cy="123" r="5"/><circle cx="160" cy="84" r="5"/>
+    <circle cx="300" cy="290" r="5"/><circle cx="300" cy="255" r="5"/><circle cx="300" cy="220" r="5"/><circle cx="300" cy="185" r="5"/><circle cx="300" cy="115" r="5"/><circle cx="300" cy="80" r="5"/>
+    <circle cx="440" cy="229" r="5"/><circle cx="440" cy="203" r="5"/><circle cx="440" cy="176" r="5"/><circle cx="440" cy="124" r="5"/><circle cx="440" cy="98" r="5"/><circle cx="440" cy="71" r="5"/>
+    <circle cx="580" cy="192" r="5"/><circle cx="580" cy="171" r="5"/><circle cx="580" cy="129" r="5"/><circle cx="580" cy="108" r="5"/><circle cx="580" cy="87" r="5"/><circle cx="580" cy="66" r="5"/>
+  </g>
+  <g fill="var(--accent)">
+    <circle cx="160" cy="240" r="8"/><circle cx="300" cy="150" r="8"/><circle cx="440" cy="150" r="8"/><circle cx="580" cy="150" r="8"/>
+  </g>
+  <text x="160" y="348" text-anchor="middle">158 K</text><text x="160" y="366" text-anchor="middle" class="soft">steps of 26 K</text>
+  <text x="300" y="348" text-anchor="middle">176.667 K</text><text x="300" y="366" text-anchor="middle" class="soft">steps of 23.33 K</text>
+  <text x="440" y="348" text-anchor="middle">217.5 K</text><text x="440" y="366" text-anchor="middle" class="soft">steps of 17.5 K</text>
+  <text x="580" y="348" text-anchor="middle">242 K</text><text x="580" y="366" text-anchor="middle" class="soft">steps of 14 K</text>
+</svg>
+<p class="small muted">Water-based life giants are always dense enough to reach the 340 K ceiling. The rungs then split the gap between the surface temperature and 340 K into 7 equal steps. At these four temperatures, one rung lands exactly on a crack.</p>
+<table style="margin-top:6px">
+<tr><th style="width:26%">Way</th><th>How it works</th></tr>
+<tr><td><strong>The ceiling</strong><br><span class="small muted">"magic" temperatures</span></td><td>A dense planet reaches the ceiling, so density stops mattering. Only the temperature counts. Water-based life at 158 K has steps of (340 − 158) ÷ 7 = 26 K. The rungs go 158, 184, <strong>210</strong>, and 210 is a crack.</td></tr>
+<tr><td><strong>Step limits</strong><br><span class="small muted">class III and IV</span></td><td>Class III steps can't be smaller than 30 K. So 640 K gives 640, 670, <strong>700</strong>. That's why green class III temperatures come every 30 K, from 520 to 700.</td></tr>
+<tr><td><strong>Depth</strong><br><span class="small muted">density sets the step</span></td><td>The reach stops short of the ceiling, so density changes the step. Temperature and density have to line up together. M17 and Flyiedge KA-V b8-5 3 are this kind. They can be green at almost any temperature.</td></tr>
+</table>
+<p class="small muted" style="margin-top:10px">It has to be exact. Aemonz UT-R d4-36 10 a at 176.666702 K is green. A planet at 176.666626 K misses 270 by the smallest step a temperature can take, and it looks normal.</p>
+</section>
+
+<section>
+<div class="kicker">The catch</div>
+<h2>Why some GGGs can't be predicted</h2>
+<p>Some planets get a random nudge before their ladder is built. It moves the bottom rung to a random temperature, and no public data shows where it went. It happens to:</p>
+<ul class="tight">
+<li><strong>Cold class II to V giants.</strong> That's class II below 280 K, class III below 415 K, class IV below 700 K and class V below 1,500 K.</li>
+<li><strong>Any other giant between 80 and about 122 K.</strong></li>
+</ul>
+<p style="margin-top:10px">For these planets the rule can only say "could be green". A visit is the only way to know. About half the catalogue GGGs are this kind, including every class II GGG.</p>
+<p class="small muted">A few of them can escape the nudge. If their own temperature already puts a rung on a crack, they're green unless the nudge moves them. Five catalogue GGGs are like this. They are Floawns FX-L b36-24 1, Dryooe Groa QX-F c16 A 7, Synookio EI-J d9-1 7, Boekh AO-H b27-33 1 and Vegnao PA-S c6-43 3.</p>
+</section>
+
+<section>
+<div class="kicker">The doorways</div>
+<h2>Every crack</h2>
+<table>
+<tr><th style="width:40%">Planet type</th><th>Cracks (K)</th></tr>
+<tr><td>Class I, and gas giants with ammonia-based life</td><td><span class="chip">115</span><span class="chip">250</span><span class="chip">270</span><span class="chip">370</span><span class="chip">700</span><span class="chip">900</span><span class="chip">1400</span></td></tr>
+<tr><td>All other gas and water giants</td><td><span class="chip new">114</span><span class="chip">210</span><span class="chip">270</span><span class="chip">370</span><span class="chip">700</span><span class="chip new">900</span><span class="chip">1400</span></td></tr>
+</table>
+<p class="small muted" style="margin-top:8px">No GGG has been found on the highlighted ones yet. Class I and ammonia-life giants never get hot enough to reach 370 and above.</p>
+</section>
+
+<section>
+<div class="kicker">The list</div>
+<h2>Every always-green temperature</h2>
+<p>At these exact surface temperatures a gas giant is green whatever its density, as long as it's denser than the minimum shown. "Rung 1" is the surface itself. Spansh rounds some temperatures down to whole numbers, so check a real scan before you fly.</p>
+
+<h3>Water-based life (also water giants, helium and helium-rich)</h3>
+<table class="small">
+<tr><th style="width:38%">Surface temperature</th><th>Green rung</th><th>Min density</th><th>Known GGGs</th></tr>
+<tr><td class="num">158.000000</td><td>3rd, on 210 K</td><td>315</td><td>4</td></tr>
+<tr><td class="num">176.666641 to 176.666702</td><td>5th, on 270 K</td><td>94</td><td>8</td></tr>
+<tr><td class="num">188.333328</td><td>2nd, on 210 K</td><td>44</td><td>none yet</td></tr>
+<tr><td class="num">210.000000</td><td>1st, on 210 K</td><td>any</td><td>none yet</td></tr>
+<tr><td class="num">217.499985 to 217.500015</td><td>4th, on 270 K</td><td>6</td><td>1</td></tr>
+<tr><td class="num">241.999985 to 242.000015</td><td>3rd, on 270 K</td><td>any</td><td>1</td></tr>
+</table>
+
+<h3>Class I and Ammonia-Based life</h3>
+<table class="small">
+<tr><th style="width:38%">Surface temperature</th><th>Green rung</th><th>Min density</th><th>Known GGGs</th></tr>
+<tr><td class="num">129.999985 to 130.000015</td><td>5th, on 250 K</td><td>2,078</td><td>2</td></tr>
+<tr><td class="num">115.000000</td><td>1st, on 115 K</td><td>any</td><td>none yet, can be nudged</td></tr>
+</table>
+
+<h3>Class III</h3>
+<table class="small">
+<tr><th style="width:38%">Surface temperature</th><th>Green rung</th><th>Min density</th><th>Known GGGs</th></tr>
+<tr><td class="num">520, 550, 580, 610, 640, 670, 700</td><td>7th down to 1st, on 700 K</td><td>any</td><td>0, 1, 1, 2, 3, 1, 1</td></tr>
+<tr><td class="num">780.000000</td><td>3rd, on 900 K</td><td>any</td><td>none yet</td></tr>
+<tr><td class="num">370.000000</td><td>1st, on 370 K</td><td>any</td><td>1, can be nudged</td></tr>
+</table>
+
+<h3>Class IV</h3>
+<table class="small">
+<tr><th style="width:38%">Surface temperature</th><th>Green rung</th><th>Min density</th><th>Known GGGs</th></tr>
+<tr><td class="num">1149.999878 to 1150.000000</td><td>6th, on 1,400 K</td><td>any</td><td>2</td></tr>
+</table>
+<p class="small muted" style="margin-top:6px">Class II has none. Every class II GGG comes from a random nudge.</p>
+</section>
+
+<section>
+<div class="kicker">The proof</div>
+<ul class="tight" style="margin-top:0">
+<li><strong>All 70 catalogue GGGs fit.</strong> 37 are never nudged, and every one has a rung exactly on a crack. The other 33 get nudged, and each one could reach a crack. Dryooe Groa QX-F c16 A 7 sits right on the edge. The journal rounds its mass and radius slightly, and most of the true values that rounding allows put it exactly on 250 K.</li>
+<li><strong>70 million scans in the EDDN archive.</strong> Only 44 planets land exactly on a crack, and 42 of them were already in the catalogue.</li>
+<li><strong>Two blind predictions came true.</strong> M17 Sector CF-Y c1-23 2 (a depth GGG) and Cyoilz JM-N b26-0 1 (a 242 K water-life GGG) were picked out of old public scans. Neither was in the catalogue. Both were visited on 1 Oct 3312, and both are green. M17's new scan matched its 3304 numbers digit for digit, and the game's Codex logged it as a Green gas giant.</li>
+<li><strong>Two near misses were ruled out.</strong> The journal prints gravity to 8 digits, and gravity depends on the same mass and radius. That pins down which rounded values are real. It ruled out Plaa Eurk CA-P d6-6 ABC 1 and Leamiae IQ-O c22-1431 9. Leamiae was visited, and it isn't green.</li>
+<li><strong>Arcanic's own 130 K test.</strong> Nyuena AC-B d14-245 7 (density 5,245) is green. Flyae Flyi AC-S d5-2666 6 (597) and Qeajo VC-Y b42-1 1 (1,620) aren't. At 130 K a class I needs about 2,078 kg/m3 to reach the ceiling.</li>
+</ul>
+</section>
+
+<section>
+<div class="kicker">For Arcanic's questions</div>
+<table>
+<tr><th style="width:34%">Question</th><th>Answer</th></tr>
+<tr><td>What is the "mystery property"?</td><td><strong>Bulk density.</strong> It decides how far the ladder reaches. See the 130 K test above.</td></tr>
+<tr><td>Why are GGGWBLs always green at 158 and 176.667 K?</td><td>They're dense enough to reach the 340 K ceiling every time. After that density stops mattering, and those two temperatures put a rung exactly on a crack.</td></tr>
+<tr><td>Can a GGGWBL at 217.5 K be green?</td><td><strong>Yes.</strong> Its 4th rung is exactly 270 K. Shaulai DL-P d5-274 7 is one, at 217.499985 K.</td></tr>
+<tr><td>Why do class III go green every 30 K?</td><td>Their step can't be smaller than 30 K. So 700 minus any multiple of 30 puts a rung on 700.</td></tr>
+<tr><td>Is it "default green"?</td><td><strong>Yes.</strong> A rung that finds no band keeps a default of pure green.</td></tr>
+<tr><td>What about the pink?</td><td>This rule doesn't cover it. It seems to come from how the planet is drawn, not from the colour choice.</td></tr>
+</table>
+</section>
+
+<section>
+<div class="kicker">Try any planet</div>
+<p class="small muted">Enter the numbers from a scan. It builds the ladder exactly as described above.</p>
+<div id="presets"></div>
+<div class="grid">
+  <div><label for="pt">Planet type</label><select id="pt">
+    <option value="12">Class I gas giant</option><option value="13">Class II gas giant</option><option value="14">Class III gas giant</option>
+    <option value="15">Class IV gas giant</option><option value="16">Class V gas giant</option><option value="10">Gas giant with water-based life</option>
+    <option value="11">Gas giant with ammonia-based life</option><option value="8">Water giant</option><option value="17">Helium-rich gas giant</option>
+    <option value="18">Helium gas giant</option></select></div>
+  <div><label for="ts">Surface temperature (K)</label><input id="ts" inputmode="decimal"></div>
+  <div><label for="em">Mass (Earth masses)</label><input id="em" inputmode="decimal"></div>
+  <div><label for="rk">Radius (km)</label><input id="rk" inputmode="decimal"></div>
+</div>
+<button id="go">Check</button>
+<div id="out"></div>
+</section>
+
+<footer>Checked against the GGG catalogue, Spansh and the EDDN archive.</footer>
+</main>
+
+<script>
+(function () {
+  var f = Math.fround;                                   // rungs keep about 7 significant digits, like the journal
+  var CEIL = [[0, 100], [75, 340], [330, 700], [680, 1200], [900, 1500], [1400, 5000]];
+  var STEP = {13: [5, 20], 14: [30, 100], 15: [50, 100], 16: [250, 1000]};
+  var NUDGE = {13: [250, 280], 14: [365, 415], 15: [500, 700], 16: [1000, 1500]};
+  var CR = {0: [115, 250, 270, 370, 700, 900, 1400], 1: [115, 250, 270, 370, 700, 900, 1400], 2: [114, 210, 270, 370, 700, 900, 1400]};
+  function group(t) { return t === 11 ? 0 : (t === 12 ? 1 : 2); }
+
+  // nudge: "none", "maybe" (green only if the nudge leaves it alone) or "always" (can't predict)
+  function nudgeOf(type, t) {
+    if (NUDGE[type]) return t >= NUDGE[type][1] ? "none" : (t > NUDGE[type][0] ? "maybe" : "always");
+    if (t > 80 && t < 110 + 0.1 * t) return t > 100 ? "maybe" : "always";
+    return "none";
+  }
+
+  function ladder(type, Ts, em, rkm) {
+    var t = f(Ts);
+    var ceil = 10000;
+    for (var i = 0; i < CEIL.length; i++) { if (t >= CEIL[i][0]) ceil = CEIL[i][1]; else break; }
+    var rho = em * 5.97219e24 / (4 / 3 * Math.PI * Math.pow(rkm * 1e3, 3));
+    var top = Math.pow(rho / 1300 * t, 1.2) * (1 / 180) * (130000 / rho) + t;
+    var step = ((ceil < top ? ceil : top) - t) * (1 / 7), free = step;
+    if (STEP[type]) { step = Math.min(step, STEP[type][1]); step = Math.max(step, STEP[type][0]); }
+    var bottom = ceil < t ? ceil : t, L = [];
+    for (var k = 0; k < 7; k++) L.push(f(step * k + bottom));
+    return { L: L, rho: rho, step: step, density: top < ceil && step === free };
+  }
+
+  var P = [["Flyiedge (depth)", 12, "122.29538", "288.495422", "71704.224"], ["M17 Sector (depth)", 12, "133.998352", "220.366837", "66635.716"],
+           ["Nyuena (130 K, dense)", 12, "130.000015", "18.154175", "17025.02"], ["Flyae Flyi (130 K, light)", 12, "130.000015", "58.582287", "51913.968"],
+           ["Eol Prou (158 K)", 10, "158.0", "389.048157", "74427.544"], ["Aemonz (176.667 K)", 10, "176.666702", "408.532623", "75062.848"],
+           ["Shaulai (217.5 K)", 10, "217.499985", "671.063721", "77073.552"], ["Cyoilz", 10, "242.000015", "1084.208984", "77259.36"],
+           ["Phrio Hype (class III, 670 K)", 14, "670.0", "1107.717285", "77486.28"], ["Eor Aowsy (class IV, 1150 K)", 15, "1149.999878", "3749.639893", "64789.372"],
+           [" Juenoea (nudged)", 13, "166.724182", "95.072899", "52542.176"], ["Dryooe Groa (on the edge)", 12, "120.72538", "83.17791", "57642.944"]];
+  var pt = document.getElementById("pt"), ts = document.getElementById("ts"), em = document.getElementById("em"), rk = document.getElementById("rk"), out = document.getElementById("out");
+  var box = document.getElementById("presets");
+  P.forEach(function (p) {
+    var b = document.createElement("button"); b.textContent = p[0];
+    b.onclick = function () { pt.value = String(p[1]); ts.value = p[2]; em.value = p[3]; rk.value = p[4]; check(); };
+    box.appendChild(b);
+  });
+  function nextUp(x) { var a = new Float32Array([x]), u = new Uint32Array(a.buffer); u[0] += 1; return a[0] - x; }
+  function check() {
+    var type = parseInt(pt.value, 10), T = parseFloat(ts.value), m = parseFloat(em.value), r = parseFloat(rk.value);
+    if (!(T > 0 && m > 0 && r > 0)) { out.innerHTML = '<p class="small muted">Enter a temperature, mass and radius.</p>'; return; }
+    var nudge = nudgeOf(type, f(T));
+    if (nudge === "always") {
+      out.innerHTML = '<p class="verdict">Can\'t predict</p><p class="small">This planet always gets a random nudge first, so only a visit shows whether it is green.</p>';
+      return;
+    }
+    var res = ladder(type, T, m, r), cr = CR[group(type)], green = false, near = false, rows = "";
+    for (var k = 0; k < 7; k++) {
+      var v = res.L[k], hit = cr.indexOf(v) >= 0;
+      if (hit) green = true;
+      if (!hit && k > 0) cr.forEach(function (c) { if (Math.abs(v - c) <= 2 * nextUp(c)) near = true; });
+      rows += '<tr' + (hit ? ' class="hit"' : '') + '><td>rung ' + (k + 1) + (k === 0 ? " (surface)" : "") + '</td><td class="num">' +
+              v.toFixed(6) + '</td><td>' + (hit ? "exactly on the " + v + " K crack" : "") + '</td></tr>';
+    }
+    var verdict = green ? "Green gas giant" : (near && res.density ? "On the edge: a rung is one or two smallest steps off a crack" : "Not green");
+    var note = nudge === "maybe" ? '<p class="small">This planet can get a random nudge. This result holds only if the nudge left it alone.</p>' : '';
+    out.innerHTML = '<p class="verdict">' + verdict + '</p>' + note + '<p class="small muted">Density ' + res.rho.toFixed(1) +
+      ' kg/m3, step ' + res.step.toFixed(4) + ' K</p><table><tr><th>Rung</th><th>Temperature (K)</th><th></th></tr>' + rows + '</table>';
+  }
+  document.getElementById("go").onclick = check;
+  pt.value = "12"; ts.value = "133.998352"; em.value = "220.366837"; rk.value = "66635.716"; check();
+
+  // ---- "See it move": the same ladder, drawn ----
+  var vType = document.getElementById("viz-type"), vT = document.getElementById("viz-t"), vD = document.getElementById("viz-d");
+  var vSvg = document.getElementById("viz-svg"), vRead = document.getElementById("viz-read"), vNote = document.getElementById("viz-note");
+  var BAND_COL = ["#e4d6bd", "#d2b893", "#bf9a72", "#a98468", "#9b8f86", "#857a73", "#6f645e", "#5c534e"];   // illustrative only
+  var GREEN = "#2fd35b";
+  var st = { type: 12, T: 158, rho: 1342 };
+  function densOf(em, rkm) { return em * 5.97219e24 / (4 / 3 * Math.PI * Math.pow(rkm * 1e3, 3)); }
+  function sliderToRho(v) { return Math.pow(10, 1 + 3 * v / 1000); }
+  function rhoToSlider(r) { return Math.round((Math.log10(r) - 1) * 1000 / 3); }
+  function stepF(x, dir) { var a = new Float32Array([x]), u = new Uint32Array(a.buffer); u[0] += dir; return a[0]; }
+  function ladderRho(type, Ts, rho) {
+    var t = f(Ts), ceil = 10000;
+    for (var i = 0; i < CEIL.length; i++) { if (t >= CEIL[i][0]) ceil = CEIL[i][1]; else break; }
+    var top = Math.pow(rho / 1300 * t, 1.2) * (1 / 180) * (130000 / rho) + t;
+    var step = ((ceil < top ? ceil : top) - t) * (1 / 7);
+    var L = []; for (var k = 0; k < 7; k++) L.push(f(step * k + t));
+    return { L: L, step: step, ceil: ceil, top: top, capped: top >= ceil };
+  }
+  function draw() {
+    var r = ladderRho(st.type, st.T, st.rho), cr = CR[group(st.type)];
+    var Tmin = 115, Tmax = 360, y0 = 20, H = 330, W = 680;
+    function y(t) { return y0 + (Tmax - t) / (Tmax - Tmin) * H; }
+    var edges = [0].concat(cr).concat([100000]), s = "";
+    for (var b = 0; b < edges.length - 1; b++) {
+      var a = Math.max(edges[b], Tmin), c = Math.min(edges[b + 1], Tmax);
+      if (c > a) s += '<rect x="120" y="' + y(c) + '" width="240" height="' + (y(a) - y(c)) + '" fill="' + BAND_COL[b] + '"/>';
+    }
+    cr.forEach(function (c) {
+      if (c > Tmin && c < Tmax) s += '<line x1="120" x2="360" y1="' + y(c) + '" y2="' + y(c) + '" stroke="#ffffff" stroke-width="2.5"/>' +
+        '<text x="114" y="' + (y(c) + 4) + '" text-anchor="end" class="soft">' + c + ' K door</text>';
+    });
+    if (r.ceil < Tmax) s += '<line x1="120" x2="360" y1="' + y(r.ceil) + '" y2="' + y(r.ceil) + '" stroke="var(--text)" stroke-dasharray="6 4"/>' +
+      '<text x="114" y="' + (y(r.ceil) + 4) + '" text-anchor="end" class="soft">ceiling ' + r.ceil + ' K</text>';
+    if (!r.capped && r.top < Tmax) s += '<line x1="250" x2="300" y1="' + y(r.top) + '" y2="' + y(r.top) + '" stroke="var(--text)"/>' +
+      '<text x="306" y="' + (y(r.top) + 4) + '" class="soft">reach</text>';
+    s += '<line x1="190" x2="190" y1="' + y(r.L[0]) + '" y2="' + y(r.L[6]) + '" stroke="var(--text)" stroke-width="2"/>' +
+         '<line x1="240" x2="240" y1="' + y(r.L[0]) + '" y2="' + y(r.L[6]) + '" stroke="var(--text)" stroke-width="2"/>';
+    var hitK = -1, best = null;
+    function ulp(c) { return stepF(c, 1) - c; }
+    for (var k = 0; k < 7; k++) {
+      var v = r.L[k], hit = cr.indexOf(v) >= 0;
+      if (hit && hitK < 0) hitK = k;
+      cr.forEach(function (c) { var d = Math.abs(v - c); if (!best || d < best.d) best = { d: d, k: k, c: c, steps: Math.round(d / ulp(c)) }; });
+      s += '<line x1="190" x2="240" y1="' + y(v) + '" y2="' + y(v) + '" stroke="' + (hit ? GREEN : "var(--text)") + '" stroke-width="' + (hit ? 5 : 2) + '"/>' +
+           '<circle cx="215" cy="' + y(v) + '" r="' + (hit ? 8 : 5) + '" fill="' + (hit ? GREEN : "var(--text)") + '"/>';
+    }
+    // the planet: one stripe per rung, coloured by the band it sits in (illustrative)
+    s += '<defs><clipPath id="vp"><circle cx="530" cy="185" r="120"/></clipPath></defs><g clip-path="url(#vp)">';
+    for (var k2 = 0; k2 < 7; k2++) {
+      var v2 = r.L[k2], bi = 0;
+      while (bi < edges.length - 2 && v2 >= edges[bi + 1]) bi++;
+      var col = cr.indexOf(v2) >= 0 ? GREEN : BAND_COL[bi];
+      s += '<rect x="410" y="' + (65 + (6 - k2) * 240 / 7) + '" width="240" height="' + (240 / 7 + 1) + '" fill="' + col + '"/>';
+    }
+    s += '</g><circle cx="530" cy="185" r="120" fill="none" stroke="' + (hitK >= 0 ? GREEN : "var(--line-strong)") + '" stroke-width="' + (hitK >= 0 ? 4 : 1) + '"/>' +
+         '<text x="530" y="330" text-anchor="middle">' + (hitK >= 0 ? "Green gas giant" : "Normal colours") + '</text>';
+    vSvg.innerHTML = '<svg viewBox="0 0 ' + W + ' 360" width="100%" role="img" aria-label="Cloud ladder and planet">' + s + '</svg>';
+    vRead.textContent = hitK >= 0 ? "Rung " + (hitK + 1) + " is exactly " + r.L[hitK] + " K, a doorway. Green!" :
+      "Closest: rung " + (best.k + 1) + " is " + best.d.toFixed(6) + " K from the " + best.c + " K doorway" +
+      (best.steps <= 50 ? " (" + best.steps + " smallest step" + (best.steps === 1 ? "" : "s") + ")" : "") + ". Not green.";
+    vNote.textContent = "Surface " + f(st.T).toFixed(6) + " K, density " + Math.round(st.rho) + " kg/m3, step " + r.step.toFixed(4) + " K. " +
+      (r.capped ? "The ladder hits the ceiling, so density doesn't matter here." : "The ladder stops short of the ceiling, so density sets the step.");
+  }
+  function setT(t, fromSlider) { st.T = t; if (!fromSlider) vT.value = Math.min(300, Math.max(123, t)); draw(); }
+  vT.oninput = function () { setT(parseFloat(vT.value), true); };
+  vD.oninput = function () { st.rho = sliderToRho(parseFloat(vD.value)); draw(); };
+  vType.onchange = function () { st.type = parseInt(vType.value, 10); draw(); };
+  document.getElementById("viz-up").onclick = function () { setT(stepF(f(st.T), 1)); };
+  document.getElementById("viz-down").onclick = function () { setT(stepF(f(st.T), -1)); };
+  var VP = [["Water-life 158 K", 10, 158.0, 1342], ["Water-life 176.666702 K", 10, 176.666702, densOf(408.532623, 75062.848)],
+            ["Water-life 217.5 K", 10, 217.5, densOf(671.063721, 77073.552)], ["Cyoilz 242 K", 10, 242.000015, densOf(1084.208984, 77259.36)],
+            ["130 K, dense (Nyuena)", 12, 130.000015, densOf(18.154175, 17025.02)], ["130 K, light (Flyae Flyi)", 12, 130.000015, densOf(58.582287, 51913.968)],
+            ["M17 (depth)", 12, 133.998352, densOf(220.366837, 66635.716)]];
+  var vBox = document.getElementById("viz-presets");
+  VP.forEach(function (p) {
+    var b = document.createElement("button"); b.textContent = p[0];
+    b.onclick = function () { st.type = p[1]; vType.value = String(p[1]); st.rho = p[3]; vD.value = rhoToSlider(p[3]); setT(p[2]); };
+    vBox.appendChild(b);
+  });
+  vD.value = rhoToSlider(st.rho); draw();
+})();
+</script>
+</body>
+</html>

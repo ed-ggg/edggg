@@ -3,18 +3,13 @@
       {
         "pin": "green",
         "text": "Shaulai DL-P d5-274 7\nhttps://ed-ggg.github.io/edggg/planets/ggg1/",
-        "system":"Shaulai DL-P d5-274",
-        "body": "7",
-        "link": "https://ed-ggg.github.io/edggg/planets/ggg1/",
         "x": -21382.65,
         "y":  -0.84,
         "z":  28866.6
       },
       {
         "pin": "green",
-        "system":"Blua Hypa HT-F d12-1226",
-        "body": "12",
-        "link": "https://ed-ggg.github.io/edggg/planets/ggg2/",
+        "text": "Blua Hypa HT-F d12-1226 12\nhttps://ed-ggg.github.io/edggg/planets/ggg2/",
         "x": -7010.28,
         "y":  -184.62,
         "z":  12817.6
